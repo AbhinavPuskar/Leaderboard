@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Leaderboard - Zoho Hackathon Lite 2025</h1>
+    <div class="student-input-container">
+        <input type="text" id="first-name" placeholder="First Name">
+        <input type="text" id="last-name" placeholder="last Name">
+        <input list="location" placeholder="Country">
+        <datalist id="location">
+            <option value="India"/>
+            <option value="Australia">Australia</option>
+            <option value="England">England</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Srilanka">Srilanka</option>
+        </datalist>
+        <input type="number" id="score" placeholder="Score">
+        <button id="add-score">Add Score</button>
+    </div>
+    <div class="leaderboard-container">
+        <div class="leaderboard-heading-container">
+            <h4>#</h4>
+            <h4>Participant name</h4>
+            <h4>Location</h4>
+            <h4>Date</h4>
+            <h4>Score</h4>
+            <h4>Operation</h4>
+        </div>
+        <div class="leaderboard-list"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
